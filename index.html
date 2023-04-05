@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="bg">
+    <head>
+        <meta charset="utf-8">
+        <link href="styles/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <meta name="p:domain_verify" content="3a3680e5cc50475f16baccd4de9782d5"/>
+        <title>kofa.bg-Nachalo</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo"><a href="index.html"><img src="images/logo1.png" alt="logo" width="190"></a></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#cc">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+        <header>
+            <div class="head1">
+                <div class="head2"><h1 class="head2-text">Kofa-Bg Превръщаме боклука в <em>злато</em>.</h1></div>
+                <div class="main-button">
+                    <a href="#products" class="main-button-text">Products</a>
+                </div>
+            </div>
+            
+        </header>
+        <div>
+            <h2>Целта на Кофа-Бг е да намали отпадъците, който ние пройзвеждаме всеки ден и да ги превърне в ценен продукт.<br> В сайта на Кофа-Бг можете да  откриете селекция качествени продукти спасени от изхвърляне или да намерите пункт където да оставите вашите годни за употреба вещи.</h2>
+        </div>
+        <font color="red">${errorMessage}</font>
+        <div class="countContainer">
+            <iframe class="stats" title='Tons of waste dumped' src='https://www.theworldcounts.com/embed/challenges/104?background_color=transparent&color=black&font_family=%22Helvetica+Neue%22%2C+Arial%2C+sans-serif&font_size=24' style='border: none' height='200' margin=auto ></iframe>
+        </div>
+        <h3 id="products">Products</h3>
+        <div class="products">
+            
+            <div class="product1">
+                <a href="radio.html">
+                    <div class="col">
+                        <img src="images/radio.jpg" alt="product1" width="230px">
+                        <h4>Vintage radio</h4>
+                        <p>$20.00</p>
+                </div>
+            </a>
+            <input id="addToCart" type="button" value="AddToCart" onclick="addToCart('Radio','20.00');" />
+            </div>
+            <div class="product1">
+                <a href="juicer.html">
+                    <div class="col">
+                        <img src="images/juice.jpg" alt="product1" width="230px">
+                        <h4>Electric juice maker</h4>
+                        <p>$15.00</p>
+                </div>
+            </a>
+            <input id="addToCart" type="button" value="AddToCart" onclick="addToCart('Juicer','15.00');" />
+            </div>
+            <div class="product1">
+                <a href="lupa.html">
+                    <div class="col">
+                        <img src="images/lupa1.jpg" alt="product1" width="230px">
+                        <h4>Desktop magnifying glass</h4>
+                        <p>$22.00</p>
+                </div>
+            </a>
+            <input id="addToCart" type="button" value="AddToCart" onclick="addToCart('Desktop magnifying glass','22.00');" />
+            </div>
+            <div class="product1">
+                <a href="box.html">
+                    <div class="col">
+                        <img src="images/box.jpg" alt="product1" width="230px">
+                        <h4>Plastic boxes kit</h4>
+                        <p>$9.99</p>
+                </div>
+            </a>
+            <input id="addToCart" type="button" value="AddToCart" onclick="addToCart('Plastic boxes kit','9.99');" />
+            </div>
+            <div class="product1">
+                <a href="nokia.html">
+                    <div class="col">
+                        <img src="images/nokia.jpg" alt="product1" width="230px">
+                        <h4>Nokia Lumia 830</h4>
+                        <p>$89.97</p>
+                    </div>
+                </a>
+                <input id="addToCart" type="button" value="AddToCart" onclick="addToCart('Nokia Lumia 830','89.97');" />
+            </div>
+            <div class="product1">
+                <a href="vase.html">
+                    <div class="col">
+                        <img src="images/vase.jpg" alt="product1" width="230px">
+                        <h4 id="name">Victorian milk glass</h4>
+                        <p id="price">$99.99</p>
+                    </div>
+                 </a>
+                 <input id="addToCart" type="button" value="AddToCart" onclick="addToCart('Victorian milk glass','99.99');" />
+            </div>
+            <div class="product1" id="productArea">
+                <a href="kettle.html" id="productArea">
+                    <div class="col">
+                        <img src="images/kettle.jpg"  id="area" alt="product1" width="230px">
+                        <h4 id="name">Kettle</h4>
+                        <p id="price">$11.00</p>
+                </div>
+            </a>
+            <input id="addToCart" type="button" value="AddToCart" onclick="addToCart('Kettle','11.00');" />
+            </div>
+            <div class="product1">
+                <a href="globus.html">
+                    <div class="col">
+                        <img src="images/globus.jpg" alt="product1" width="230px">
+                        <h4>Globus</h4>
+                        <p>$24.01</p>
+                        
+                    </div>
+                </a>
+                <input id="addToCart" type="button" value="AddToCart" onclick="addToCart('Globus','24.01');" />
+            </div>
+        </div>
+        <div id="cartOrder">
+            <div id="cc" class="cart">
+                <button onclick="revealC()" class="cartButton">Cart</button>
+                <div class="cartProducts" id="cp">
+                    
+                    <div id="ct">
+                    <p id="TotalP">Total: No products added!</p>
+                    </div>             
+                </div>
+            </div>
+
+            <button onclick="revealSubmittion()">Order</button>
+            <div class='submittion' id="s1">
+                <textarea id="clientName" placeholder="Name"></textarea>
+                <textarea id="address" placeholder="Address"></textarea>
+                <textarea id="phoneNumber" placeholder="Phone Number"></textarea>
+                <button id="orderCartBtn" onclick="sendCartOrder();">Order Products</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <label for="newComment" name="newComment">Add your comment below-</label>
+            <textarea id="newComment"></textarea>
+            <button id="addComments">Add Comment</button>
+            <div id="allComments"></div>
+        </div>
+        <footer>
+            <div class="footer-logo"> <img src="images/logo1.png" alt="logo"></div>
+            <div class="contact">
+                <p><a href="mailto:clients@kofa.bg">clients@kofa.bg</a></p>
+                <p><a href="tel:+359 888 888 888">+359 888 888 888</a></p>
+                <p>Bul.Sveti Kliment Ohridski 54<br>Sofia,Bulgaria</p>
+            </div>
+        </footer>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>

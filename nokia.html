@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="bg">
+    <head>
+        <meta charset="utf-8">
+        <link href="styles/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <title>kofa.bg-Produkti</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo"><a href="index.html"><img src="images/logo1.png" alt="logo" width="190"></a></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="index.html#products">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#cc">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="product">
+            <img src="images/nokia.jpg" alt="vase">
+            <h3 id="productName">Nokia Lumia 830</h3>
+            <p class="price">$89.97</p>
+            <div class="description">
+            <h4>Описание</h4>
+            <p>Used, like new Nokia Lumia 830.</p>
+            </div>
+
+        </div>
+        <button onclick="reveal()">
+            Add review/Show reviews
+        </button>
+        
+        <button onclick="revealSubmittion()">Order</button>
+        <div class='submittion' id="s1">
+            <textarea id="clientName" placeholder="Name"></textarea>
+            <textarea id="address" placeholder="Address"></textarea>
+            <textarea id="phoneNumber" placeholder="Phone Number"></textarea>
+            <button id="orderBtn">Order Product</button>
+        </div>
+       
+        <div class="container" id="c1">
+            <label for="newComment" name="newComment">Add review-</label>
+            <textarea id="newComment" placeholder="Your Review"></textarea>
+            <button id="addComments">Add review</button>
+            <div id="allComments"></div>
+        </div>
+
+        <footer>
+            <div class="footer-logo"> <img src="images/logo1.png" alt="logo"></div>
+            <div class="contact">
+                <p><a href="mailto:clients@kofa.bg">Mail: clients@kofa.bg</a></p>
+                <p><a href="tel:+359 888 888 888">Telephone: +359 888 888 888</a></p>
+                <p>Bul.Sveti Kliment Ohridski 54<br>Sofia,Bulgaria</p>
+            </div>
+        </footer>
+        <script src="scripts/main.js"></script>
+    
+    </body>
